@@ -1,0 +1,89 @@
+import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
+import { Button } from "@/components/ui/button";
+import AnimatedText from "@/lib/gsap/HeroTitle";
+
+
+
+
+export default function Features() {
+  return (
+    <div className="w-full h-max  p-5 lg:p-10 md:mt-12">
+<AnimatedText animate="leftToRight">
+
+      <h2 className="font-semibold p-5 text-xl  md:text-3xl">Our features.</h2>
+</AnimatedText>
+        <div className="flex-col flex items-center md:flex-row gap-5">
+              <div className="relative flex h-max md:h-[70vh] w-full flex-col items-start justify-start overflow-hidden">
+      <BackgroundRippleEffect />
+      <div className="mt-60 w-full">
+        <AnimatedText  animate="topToBottom">
+
+        <h2 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-neutral-800 md:text-4xl lg:text-7xl dark:text-neutral-100">
+          Performance First
+        </h2>
+        </AnimatedText>
+         <AnimatedText  animate="bottomToTop">
+
+        <p className=" z-10  mt-4 text-sm max-w-xl text-center text-neutral-800 dark:text-neutral-500">
+          We optimize every detail so your website loads fast, feels smooth.
+        </p>
+         </AnimatedText>
+      </div>
+    </div>
+     
+      <div className="p-10 flex h-[70vh] flex-col items-center justify-center overflow-hidden rounded-md rounded-tl-3xl rounded-br-3xl rounded-bl-3xl border border-transparent px-4 shadow ring-1 shadow-black/10 ring-black/5 md:size-100 dark:shadow-white/10 dark:ring-white/5">
+        
+      <div className="flex items-left gap-4 flex-col justify-left">
+        <AnimatedText animate="rightToLeft">
+
+            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-3xl md:text-5xl lg:text-7xl relative z-20 font-bold tracking-tight">
+        Clean <br /> Designs.
+      </h2>
+        </AnimatedText>
+         <AnimatedText  animate="rightToLeft">
+
+         <p className="relative z-10 mx-auto mt-4 max-w-xl text-center text-neutral-800 dark:text-neutral-500">Every layout, color, and interaction is intentional — built to guide users.</p>
+         </AnimatedText>
+      </div>
+  
+
+
+    </div>
+      
+</div>
+     
+        <div className="flex-col mt-12 flex items-center justify-between md:flex-row gap-5">
+            <div className="w-100% md:w-[70%] h-[50vh]  flex items-center justfiy-center flex-col gap-6 rounded-xl border border-gray-700 bg-gradient-to-b from-neutral-900 to-neutral-700  p-10 ">
+              <AnimatedText animate="topToBottom">
+
+                <h2 className=" z-10   text-center text-3xl font-bold text-neutral-200 md:text-4xl lg:text-7xl dark:text-neutral-100">
+        Clear User Experience
+        </h2>
+              </AnimatedText>
+
+
+              <AnimatedText animate="leftToRight">
+                <p 
+                className="font-normal text-center text-sm md:text-md lg:text-lg text-neutral-400">
+                  We design experiences that feel natural, predictable, and easy to use.
+
+                </p>
+              </AnimatedText>
+              
+            </div>
+            <div className=" w-[50%] md:w-[30%] h-[50vh]  flex items-center justify-center flex-col">
+        <AnimatedText animate="bottomToTop">
+  <h2 className=" text-center font-bold text-green-500 dark:text-green-500 text-3xl">
+   <span className="font-bold text-neutral-600 dark:text-neutral-300">Intrested?</span>  <br/>
+      Lets Start a Conversation
+        </h2>
+          </AnimatedText>      
+        <Button className="mt-12">
+              Start a Conversation
+        </Button>
+            </div>
+
+        </div>
+    </div>
+  )
+}
