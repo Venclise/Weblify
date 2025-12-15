@@ -49,3 +49,67 @@ export const NavLinks = [
     },
     
 ]
+
+
+export const reviews = [
+  {
+    id: 1,
+    name: "Daniel Carter",
+    country: "United States",
+    post: "Weblify delivered a clean, high-performance website that perfectly represents our brand. The process was smooth and communication was excellent."
+  },
+  {
+    id: 2,
+    name: "Emily Watson",
+    country: "United Kingdom",
+    post: "Professional, responsive, and detail-oriented. Weblify transformed our outdated site into something modern and elegant."
+  },
+  {
+    id: 3,
+    name: "Liam O'Connor",
+    country: "Ireland",
+    post: "Outstanding work from start to finish. The website is fast, responsive, and visually impressive."
+  },
+  {
+    id: 4,
+    name: "Sophie Laurent",
+    country: "France",
+    post: "Weblify has an excellent sense of design and usability. Our website now feels premium and intuitive."
+  },
+  {
+    id: 5,
+    name: "Marco Bianchi",
+    country: "Italy",
+    post: "Great experience working with Weblify. They understood our requirements clearly and delivered beyond expectations."
+  },
+  {
+    id: 6,
+    name: "Jonas Müller",
+    country: "Germany",
+    post: "High-quality development with strong attention to performance and structure. Very reliable team."
+  },
+  {
+    id: 7,
+    name: "Lucas Ferreira",
+    country: "Brazil",
+    post: "Weblify helped us build a modern website that performs beautifully on all devices. Highly professional service."
+  },
+  {
+    id: 8,
+    name: "Aiko Tanaka",
+    country: "Japan",
+    post: "Clean design and excellent functionality. Weblify delivered a website that feels both simple and powerful."
+  },
+  {
+    id: 9,
+    name: "Oliver Chen",
+    country: "Singapore",
+    post: "Impressed by Weblify’s attention to detail and fast delivery. The final product exceeded our expectations."
+  },
+  {
+    id: 10,
+    name: "Hassan Al-Farsi",
+    country: "United Arab Emirates",
+    post: "Weblify created a sleek and professional website that reflects our brand perfectly. Communication was smooth throughout."
+  }
+];

@@ -6,6 +6,7 @@ import { ThemeToggle } from "@/components/ui/dark-toggle";
 import Features from "@/sections/Features";
 
 import Hero from "@/sections/Hero";
+import Reviews from "@/sections/Reviews";
 import Work from "@/sections/Work";
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Features />
         <Work />
+        <Reviews />
         <Footer />
       
     </>

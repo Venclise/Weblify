@@ -18,7 +18,7 @@ export default function Features() {
       <div className="mt-60 w-full">
         <AnimatedText  animate="topToBottom">
 
-        <h2 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-neutral-800 md:text-4xl lg:text-7xl dark:text-neutral-100">
+        <h2 className=" z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-neutral-800 md:text-4xl lg:text-7xl dark:text-neutral-100">
           Performance First
         </h2>
         </AnimatedText>

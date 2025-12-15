@@ -33,10 +33,10 @@ export default function GallerySlider() {
       >
         {GalleryImages.map(({ link, id, title, desc, img, type }) => (
           <SwiperSlide key={id} className="flex justify-center">
-            <Link href={link} className="w-full max-w-[340px]">
+        <Link href={link} className="w-full max-w-[340px]" target="_blank">
               <div
                 className="
-                  h-[520px]
+                h-[520px]
                   rounded-2xl
                   overflow-hidden
                   bg-neutral-100 dark:bg-neutral-900
