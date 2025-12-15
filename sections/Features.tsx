@@ -8,7 +8,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function Features() {
   return (
-    <div className="w-full h-max  p-5 lg:p-10 md:mt-12">
+    <div id="features" className="w-full h-max  p-5 lg:p-10 md:mt-12">
 <AnimatedText animate="leftToRight">
 
       <h2 className="font-semibold p-5 text-xl  md:text-3xl">Our features.</h2>
@@ -75,7 +75,7 @@ export default function Features() {
             </div>
             <div className=" w-[50%] md:w-[30%] h-[50vh] flex items-center justify-center flex-col">
         <AnimatedText animate="bottomToTop">
-  <h2 className=" text-center font-bold text-green-500 dark:text-green-500 text-3xl md:text-5xl">
+  <h2 className=" text-center font-bold text-green-500 dark:text-green-500 text-5xl md:text-5xl">
    <span className="font-bold text-neutral-600 dark:text-neutral-300">Intrested?</span>  <br/>
       Lets Start a Conversation
         </h2>

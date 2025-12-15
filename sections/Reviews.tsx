@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Reviews() {
   return (
-    <div className="w-full overflow-hidden space-y-6 py-8 mt-24 p-5 h-max lg:h-screen">
+    <div id="reviews" className="w-full overflow-hidden space-y-6 py-8 mt-24 p-5 h-max lg:h-screen">
          
             <AnimatedText animate='leftToRight'>
                 <h1 className='font-semibold text-xl md:text-2xl text-black dark:text-white '>
