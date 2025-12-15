@@ -8,7 +8,14 @@
 @custom-variant dark (&:is(.dark *));
 html.dark {
   color-scheme: dark;
+  
 }
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 
 @theme inline {
   --color-background: var(--background);

@@ -5,7 +5,7 @@ import Swiper from "@/components/Swiper";
 
 export default function Work() {
     return (
-        <div className='w-full h-max p-5 md:p-10 mt-24'>
+        <div className='w-full h-max p-5 md:p-10 mt-24'id='work'>
              <AnimatedText animate='leftToRight'>
                 <h1 className='font-semibold text-xl md:text-2xl text-black dark:text-white '>
 

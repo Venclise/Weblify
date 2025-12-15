@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Reviews() {
   return (
-    <div className="w-full overflow-hidden space-y-6 py-8 mt-24 p-5">
+    <div className="w-full overflow-hidden space-y-6 py-8 mt-24 p-5 h-max lg:h-screen">
          
             <AnimatedText animate='leftToRight'>
                 <h1 className='font-semibold text-xl md:text-2xl text-black dark:text-white '>
@@ -21,7 +21,7 @@ export default function Reviews() {
                 </p>
              </AnimatedText>
       <Marquee speed={60} pauseOnHover gradient={false}>
-        {reviews.map(({ id, name, post }) => (
+        {reviews.map(({ id, name, post,country }) => (
           <div
             key={id}
             className="
@@ -38,7 +38,10 @@ export default function Reviews() {
             </p>
 
             <p className="font-medium text-sm text-right mt-4 text-neutral-900 dark:text-neutral-100">
-              — {name}
+              — {name},<span className="font-semibold">
+
+              {country}
+              </span>
             </p>
           </div>
         ))}
@@ -46,7 +49,7 @@ export default function Reviews() {
 
       {/* MARQUEE 2 (REVERSE) */}
       <Marquee speed={60} direction="right" pauseOnHover gradient={false}>
-        {reviews.map(({ id, name, post }) => (
+        {reviews.map(({ id, name, post,country }) => (
           <div
             key={`reverse-${id}`}
             className="
@@ -63,7 +66,11 @@ export default function Reviews() {
             </p>
 
             <p className="font-medium text-sm text-right mt-4 text-neutral-900 dark:text-neutral-100">
-              — {name}
+              — {name},
+              <span className="font-semibold">
+
+              {country}
+              </span>
             </p>
           </div>
         ))}
