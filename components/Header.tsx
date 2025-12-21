@@ -47,7 +47,7 @@ export default  function Header() {
         ))
       }
       <Link href="/contact" className="w-full">
-      <Button className="w-full mt-6 text-sm text-white rounded-full">Contact</Button>
+      <Button className="w-full mt-6 text-sm text-white dark:text-black rounded-full">Contact</Button>
       </Link>
       </SheetDescription>
     </SheetHeader>
