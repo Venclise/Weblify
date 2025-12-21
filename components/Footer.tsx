@@ -5,7 +5,7 @@ import React from 'react'
 export default function Footer() {
     const year = new Date().getFullYear()
   return (
-    <div className='pt-5  pl-3 pr-3 md:p-5 md:pb-0 border-t border-neutral-200 dark:border-neutral-700 mt-24 h-[20vh] flex flex-col md:flex-row items-center justify-between '>
+    <div className='pt-5  pl-3 pr-3 md:p-5 md:pb-0 border-t border-neutral-200 dark:border-neutral-700 mt-24 h-max lg:h-[20vh] flex flex-col md:flex-row items-center justify-between '>
       <Link className="font-semibold text-2xl md:text-4xl dark:text-neutral-200 text-neutral-700" href="/" >
       Weblify.
       </Link>

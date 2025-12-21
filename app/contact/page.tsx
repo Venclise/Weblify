@@ -48,7 +48,7 @@ export default function Page() {
 
 
   return (
-    <div className=" h-[150vh]  md:h-[130vh]  w-full flex flex-col items-center md:flex-row justify-between p-7">
+    <div className="h-[130vh]   w-full flex flex-col items-center md:flex-row justify-center gap-4 md:justify-between p-7">
       
 
       <div className="w-full md:w-1/2 mt-12 md:mt-0">
@@ -111,10 +111,11 @@ export default function Page() {
         </label>
 {
   loading ? 
-  <Button  disabled>
+  <Button  disabled className="rounded-full">
     <Spinner />
     Loading
-      </Button> : <Button >
+      </Button> : 
+  <Button   className="rounded-full cursor-pointer">
         Submit
       </Button>
       }

@@ -6,14 +6,14 @@ import Link from "next/link";
 
 export default function Features() {
   return (
-    <div id="features" className="w-full h-max  p-5 lg:p-10 md:mt-12">
+    <div id="features" className="w-full h-max  p-5 lg:p-10 mt-6 md:mt-12">
 <AnimatedText animate="leftToRight">
 
-      <h2 className="font-semibold p-5 text-xl  md:text-3xl">Our features.</h2>
+      <h2 className="font-semibold  p-2 md:p-5 text-xl  md:text-3xl">Our features.</h2>
 </AnimatedText>
         <div className="flex-col flex items-center md:flex-row gap-5">
               <div className="relative flex h-max md:h-[70vh] w-full flex-col items-start justify-start overflow-hidden">
-      <BackgroundRippleEffect />
+      <BackgroundRippleEffect  cellSize={100}/>
       <div className="mt-60 w-full flex items-center justify-center flex-col gap-4">
         <AnimatedText  animate="topToBottom">
 
@@ -35,9 +35,9 @@ export default function Features() {
       <div className="flex items-center justify-center gap-4 flex-col ">
         <AnimatedText animate="rightToLeft">
 
-            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-500 to-neutral-200 dark:from-neutral-600 dark:to-white text-7xl md:text-6xl lg:text-7xl  z-20 font-bold tracking-tight">
+            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-purple-400 to-slate-500  text-7xl md:text-6xl lg:text-7xl  z-20 font-bold tracking-tight">
         Clean <br />
-        <span className="bg-clip-text text-transparent text-center bg-gradient-to-t from-neutral-500 to-slate-200 ">Designs</span> 
+        <span className="bg-clip-text text-transparent text-center bg-gradient-to-t from-purple-500 to-slate-500 ">Designs</span> 
       </h2>
         </AnimatedText>
          <AnimatedText  animate="rightToLeft">
@@ -53,7 +53,7 @@ export default function Features() {
 </div>
      
         <div className="flex-col mt-12 flex items-center justify-between md:flex-row gap-5">
-            <div className="w-100% h-[30vh]  md:w-[70%] md:h-[50vh]  flex items-center justify-center flex-col gap-6 rounded-xl border border-gray-700 bg-gradient-to-b from-neutral-900 to-gray-800  p-10 ">
+            <div className="w-100% h-[30vh]  md:w-[70%] md:h-[50vh]  flex items-center justify-center flex-col gap-6 rounded-xl   bg-gradient-to-b from-slate-700 to-gray-900  p-10 ">
               <AnimatedText animate="topToBottom">
 
                 <h2 className=" z-10   text-center text-3xl font-bold text-neutral-200 md:text-5xl lg:text-6xl dark:text-neutral-100">

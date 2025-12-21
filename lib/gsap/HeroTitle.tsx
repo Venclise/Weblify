@@ -23,7 +23,7 @@ export  function HeroTitle() {
   }, []);
 
   return (
-    <h1 className="text-6xl md:text-[12rem] lg:[16rem] font-bold flex tracking-wide">
+    <h1 className="text-7xl sm:text-8xl md:text-[12rem] lg:[16rem] font-bold flex tracking-wide">
       {text.split("").map((char, i) => (
         <span
           key={i}

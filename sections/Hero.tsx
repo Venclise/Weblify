@@ -5,7 +5,8 @@ import Link from "next/link";
 
 export default function Hero() {
    return (
-     <div  className="flex items-center justify-between p-10  w-full h-max lg:h-[120vh] dark:bg-black " >
+     <div  className="flex items-center justify-between p-10  w-full h-screen lg:h-[120vh] dark:bg-black " >
+          
 
     
            <div className="flex items-center justify-center gap-4 flex-col w-full h-full">

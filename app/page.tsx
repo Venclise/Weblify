@@ -13,7 +13,7 @@ import Work from "@/sections/Work";
 export default function Home() {
   return (
     <>
-   {/* <div className="bg-blue-500  h-screen w-[50%]"/> */}
+   
       <Hero />
       <Features />
         <Work />
