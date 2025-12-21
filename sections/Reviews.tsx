@@ -5,17 +5,15 @@ import Marquee from "react-fast-marquee";
 
 export default function Reviews() {
   return (
-    <div id="reviews" className="w-full overflow-hidden space-y-6 py-8 mt-24 p-5 h-max lg:h-screen">
+    <div id="reviews" className="w-full overflow-hidden space-y-6 py-10 mt-24 px-5 h-max lg:h-screen">
          
             <AnimatedText animate='leftToRight'>
-                <h1 className='font-semibold text-xl md:text-2xl text-black dark:text-white '>
+                      <h2 className="font-semibold p-5 text-xl  md:text-3xl">Reviews.</h2>
 
-                          Reviews.
-                </h1>
              </AnimatedText>
 
     <AnimatedText animate='leftToRight'>
-                <p className=' text-xs sm:text-sm  text-neutral-700 dark:text-neutral-300 '>
+                <p className=' text-xs sm:text-sm md:text-md  text-neutral-700 dark:text-neutral-300 '>
 
                           See what our client say about us.
                 </p>
@@ -47,7 +45,7 @@ export default function Reviews() {
         ))}
       </Marquee>
 
-      {/* MARQUEE 2 (REVERSE) */}
+      
       <Marquee speed={60} direction="right" pauseOnHover gradient={false}>
         {reviews.map(({ id, name, post,country }) => (
           <div

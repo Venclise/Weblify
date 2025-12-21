@@ -35,22 +35,22 @@ export const NavLinks = [
     {
         id:1,
         title: "Home",
-        href: "#home",
+        href: "/",
     },
       {
         id:2,
         title: "Features",
-        href: "#features",
+        href: "/#features",
     },
       {
         id:3,
         title: "Our Work",
-        href: "#work",
+        href: "/#work",
     },
     {
         id:4,
         title: "Reviews",
-        href: "#reviews",
+        href: "/#reviews",
     },
 ]
 

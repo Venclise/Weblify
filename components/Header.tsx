@@ -15,19 +15,26 @@ import { Button } from "./ui/button";
 export default  function Header() {
      return(
          <div className="flex items-center justify-between p-5 fixed top-0 left-0 w-full h-max bg-white z-[99] dark:bg-black">
-               <a href="#" className="font-bold text-xl">Weblify.</a>
+               <Link href="/" className="font-bold text-2xl">Weblify.</Link>
                
                 <div className="flex items-center justify-center gap-2">
 
 
              <ThemeToggle />
              <Sheet >
-  <SheetTrigger >
-     <Menu />
+  <SheetTrigger className="border border-neutral-300 rounded-sm dark:border-neutral-700 p-1">
+
+     <Menu  className="cursor-pointer  "/>
+   
   </SheetTrigger>
-  <SheetContent className="z-100 p-5">
+<SheetContent className="z-100 p-5">
     <SheetHeader>
-      <SheetTitle className="font-semibold text-3xl text-center">Weblify.</SheetTitle>
+<SheetClose>
+        <SheetTitle>
+
+      <Link href="/" className="font-semibold text-3xl ">Weblify.</Link>
+        </SheetTitle>
+</SheetClose>
       <SheetDescription className="mt-24 flex justify-start items-start flex-col gap-2">
       {
         NavLinks.map(({id,href,title}) => (
@@ -39,7 +46,9 @@ export default  function Header() {
                </Link>
         ))
       }
-      <Button className="w-full mt-6 text-sm text-neutral-300 dark:text-neutral-700">Contact</Button>
+      <Link href="/contact" className="w-full">
+      <Button className="w-full mt-6 text-sm text-white rounded-full">Contact</Button>
+      </Link>
       </SheetDescription>
     </SheetHeader>
   </SheetContent>

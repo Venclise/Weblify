@@ -2,9 +2,7 @@ import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect
 import { Button } from "@/components/ui/button";
 import AnimatedText from "@/lib/gsap/HeroTitle";
 import { ChevronRight } from "lucide-react";
-
-
-
+import Link from "next/link";
 
 export default function Features() {
   return (
@@ -37,9 +35,9 @@ export default function Features() {
       <div className="flex items-center justify-center gap-4 flex-col ">
         <AnimatedText animate="rightToLeft">
 
-            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-7xl md:text-6xl lg:text-7xl  z-20 font-bold tracking-tight">
+            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-500 to-neutral-200 dark:from-neutral-600 dark:to-white text-7xl md:text-6xl lg:text-7xl  z-20 font-bold tracking-tight">
         Clean <br />
-        <span className="bg-clip-text text-transparent text-center bg-gradient-to-b from-blue-500 to-green-500 ">Designs</span> 
+        <span className="bg-clip-text text-transparent text-center bg-gradient-to-t from-neutral-500 to-slate-200 ">Designs</span> 
       </h2>
         </AnimatedText>
          <AnimatedText  animate="rightToLeft">
@@ -55,7 +53,7 @@ export default function Features() {
 </div>
      
         <div className="flex-col mt-12 flex items-center justify-between md:flex-row gap-5">
-            <div className="w-100% h-[30vh]  md:w-[70%] md:h-[50vh]  flex items-center justify-center flex-col gap-6 rounded-xl border border-gray-700 bg-gradient-to-b from-neutral-900 to-neutral-700  p-10 ">
+            <div className="w-100% h-[30vh]  md:w-[70%] md:h-[50vh]  flex items-center justify-center flex-col gap-6 rounded-xl border border-gray-700 bg-gradient-to-b from-neutral-900 to-gray-800  p-10 ">
               <AnimatedText animate="topToBottom">
 
                 <h2 className=" z-10   text-center text-3xl font-bold text-neutral-200 md:text-5xl lg:text-6xl dark:text-neutral-100">
@@ -66,7 +64,7 @@ export default function Features() {
 
               <AnimatedText animate="leftToRight">
                 <p 
-                className="font-normal text-center text-sm md:text-md lg:text-lg text-neutral-400">
+                className="font-normal text-center text-sm   text-neutral-400">
                   We design experiences that feel natural, predictable, and easy to use.
 
                 </p>
@@ -79,11 +77,13 @@ export default function Features() {
    <span className="font-bold text-neutral-600 dark:text-neutral-300">Intrested?</span>  <br/>
       Lets Start a Conversation
         </h2>
-          </AnimatedText>      
-        <Button className="mt-12 rounded-full  p-6 bg-green-500 flex items-center justify-center hover:bg-green-400 cursor-pointer" >
+          </AnimatedText>     
+          <Link href="/contact">
+        <Button className="mt-12 rounded-full  p-5 bg-green-500 hover:bg-green-500  text-white flex items-center justify-center hover:gap-6  cursor-pointer" >
               Start a Conversation
                <ChevronRight />
         </Button>
+          </Link> 
             </div>
 
         </div>

@@ -13,12 +13,12 @@ import Work from "@/sections/Work";
 export default function Home() {
   return (
     <>
-    <Header />
+   {/* <div className="bg-blue-500  h-screen w-[50%]"/> */}
       <Hero />
       <Features />
         <Work />
         <Reviews />
-        <Footer />
+        
       
     </>
 
