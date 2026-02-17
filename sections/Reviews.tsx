@@ -8,16 +8,11 @@ export default function Reviews() {
     <div id="reviews" className="w-full overflow-hidden space-y-6 py-10 mt-24 px-5 h-max lg:h-screen">
          
             <AnimatedText animate='leftToRight'>
-                      <h2 className="font-semibold p-5 text-xl  md:text-3xl">Reviews.</h2>
+                      <h2 className=" p-5 text-xl  md:text-4xl text-white">Testimonials.</h2>
 
              </AnimatedText>
 
-    <AnimatedText animate='leftToRight'>
-                <p className=' text-xs sm:text-sm md:text-md  text-neutral-700 dark:text-neutral-300 '>
-
-                          See what our client say about us.
-                </p>
-             </AnimatedText>
+ 
       <Marquee speed={60} pauseOnHover gradient={false}>
         {reviews.map(({ id, name, post,country }) => (
           <div
@@ -35,8 +30,8 @@ export default function Reviews() {
               “{post}”
             </p>
 
-            <p className="font-medium text-sm text-right mt-4 text-neutral-900 dark:text-neutral-100">
-              — {name},<span className="font-semibold">
+            <p className=" text-sm text-right mt-4 text-neutral-900 dark:text-neutral-100">
+              — {name},<span className="">
 
               {country}
               </span>
@@ -63,9 +58,9 @@ export default function Reviews() {
               “{post}”
             </p>
 
-            <p className="font-medium text-sm text-right mt-4 text-neutral-900 dark:text-neutral-100">
+            <p className=" text-sm text-right mt-4 text-neutral-900 dark:text-neutral-100">
               — {name},
-              <span className="font-semibold">
+              <span className="">
 
               {country}
               </span>

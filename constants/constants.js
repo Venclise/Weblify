@@ -1,8 +1,41 @@
 import { m } from "motion/react"
 
  export const GalleryImages = [
+  {
+  id: 1,
+        title: "Wood",
+        desc: "A Furniture  store E-commerce site ",
+        img: "/furniture.png",
+        link: "https://wood-inky-eight.vercel.app/",
+  },
+       {
+        id: 2,
+        title: "WTS",
+        desc: "A Tech Accessories store E-commerce site ",
+        img: "/ets.png",
+        link: "https://wts-eight.vercel.app/",
+       
+    },
+     {
+        id: 3,
+        title: "Chewzy",
+        desc: "Fast food Resturant site",
+        img: "/chewzy.png",
+        link: "https://chewzy-wheat.vercel.app/",
+       
+       
+    },
+
+     {
+        id: 4,
+        title: "Sonit",
+        desc: "A Sanitary Ware E-commerce store",
+        img: "/sonit.png",
+        link: "https://sonit-murex.vercel.app/",
+       
+    },
     {
-        id: 1,
+        id: 5,
         title: "Sky Cast",
         desc: "A live weather data app.",
         img: "/skycast.webp",
@@ -11,7 +44,7 @@ import { m } from "motion/react"
         color: "shadow-[6px_9px_36px_3px_rgba(234,_179,_8,_0.5)]"
     },
   {
-        id: 2,
+        id: 6,
         title: "Brain AI",
         desc: "Brain AI your only AI partner ",
         img: "/brain.png",
@@ -20,7 +53,7 @@ import { m } from "motion/react"
      color:  "shadow-[6px_9px_36px_3px_rgba(236,_72,_153,_0.5)]" 
     },
       {
-        id: 3,
+        id: 7,
         title: "Layers",
         desc: "An AI Powered app for your daily solution.",
         img: "/layer.png",

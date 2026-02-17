@@ -3,6 +3,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+
 
 const text = "Weblify.";
 
@@ -23,14 +25,14 @@ export  function HeroTitle() {
   }, []);
 
   return (
-    <h1 className="text-7xl sm:text-8xl md:text-[12rem] lg:[16rem] font-bold flex tracking-wide">
+    <h1 className="text-8xl sm:text-8xl md:text-[13rem] text-white  font- flex items-center   ">
       {text.split("").map((char, i) => (
         <span
           key={i}
           ref={(el) => {
             if (el) lettersRef.current[i] = el;
           }}
-          className="inline-block"
+          className="inline-block  "
         >
           {char === " " ? "\u00A0" : char}
         </span>
@@ -83,7 +85,7 @@ interface AnimatedTextProps {
 const AnimatedText: React.FC<AnimatedTextProps> = ({
   children,
   animate,
-  duration = 1,
+  duration = .5,
   delay = 0,
 }) => {
   const elRef = useRef<HTMLDivElement>(null);
@@ -101,7 +103,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
         fromVars.x = 50;
         break;
       case "topToBottom":
-        fromVars.y = -50;
+        fromVars.y = -100;
         break;
       case "bottomToTop":
         fromVars.y = 50;
@@ -119,8 +121,8 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
         delay,
         scrollTrigger: {
           trigger: elRef.current,
-          start: "top 80%",
-            toggleActions: "play reverse play reverse", 
+          start: "top 100%",
+            toggleActions: "play reverse play", 
         },
       }
     );
@@ -130,3 +132,58 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
 };
 
 export default AnimatedText;
+
+
+
+export function MorphExample() {
+  useEffect(() => {
+    gsap.registerPlugin(MorphSVGPlugin);
+
+    // Make sure everything is paths
+    MorphSVGPlugin.convertToPath("polygon, rect, circle");
+
+    gsap.to("#shape", {
+      duration: 1.2,
+      morphSVG: {
+        shape: "#checkIcon",
+        shapeIndex: "auto",
+      },
+      ease: "power3.inOut",
+    });
+  }, []);
+
+  return (
+    <svg viewBox="0 0 24 24" width="120">
+      {/* START SHAPE */}
+      <path
+        id="shape"
+        d="M4 4 H20 V20 H4 Z"
+        fill="none"
+        stroke="black"
+        strokeWidth="2"
+      />
+
+      {/* TARGET ICON */}
+      <g id="checkIcon">
+        <path
+          d="M3 17L9 11L13 15L21 7"
+          fill="none"
+          stroke="black"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M15 7H21V13"
+          fill="none"
+          stroke="black"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </svg>
+  );
+}
+
+

@@ -1,8 +1,8 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Contact from "@/sections/Contact";
 
-import { ThemeToggle } from "@/components/ui/dark-toggle";
 import Features from "@/sections/Features";
 
 import Hero from "@/sections/Hero";
@@ -15,10 +15,10 @@ export default function Home() {
     <>
    
       <Hero />
-      <Features />
-        <Work />
-        <Reviews />
-        
+  <Work />
+  <Features />
+  <Reviews />
+  <Contact />
       
     </>
 

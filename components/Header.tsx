@@ -1,5 +1,5 @@
 import { NavLinks } from "@/constants/constants";
-import { ThemeToggle } from "./ui/dark-toggle";
+
 import Link from "next/link";
 import {
   Sheet,
@@ -14,40 +14,43 @@ import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 export default  function Header() {
      return(
-         <div className="flex items-center justify-between p-5 fixed top-0 left-0 w-full h-max bg-white z-[99] dark:bg-black">
-               <Link href="/" className="font-bold text-2xl">Weblify.</Link>
+      <div className="bg-transparent  flex items-center justify-center mt-4 w-full h-[2.5rem] fixed top-0 left-0 p-5 z-[99]">
+
+         <div className="flex rounded-lg items-center justify-between py-6 pr-5 pl-2 overflow-hidden w-[90%] h-full bg-brown-800 backdrop-filter backdrop-blur-md   bg-opacity-10 ">
+               <Link href="/" className="text-2xl bg-black text-white     px-1 rounded-md ">W</Link>
                
                 <div className="flex items-center justify-center gap-2">
 
 
-             <ThemeToggle />
+        
              <Sheet >
-  <SheetTrigger className="border border-neutral-300 rounded-sm dark:border-neutral-700 p-1">
-
-     <Menu  className="cursor-pointer  "/>
+  <SheetTrigger  asChild>
+<Button variant="ghost" className="hover:text-black cursor-pointer">
+     <Menu  className="cursor-pointer text-white  "/>
+</Button>
    
   </SheetTrigger>
-<SheetContent className="z-100 p-5">
+<SheetContent className="z-100 p-5 bg-black border-0">
     <SheetHeader>
 <SheetClose>
         <SheetTitle>
+               <Link href="/" className="text-2xl text-white   px-1 rounded-md ">W</Link>
 
-      <Link href="/" className="font-semibold text-3xl ">Weblify.</Link>
         </SheetTitle>
 </SheetClose>
-      <SheetDescription className="mt-24 flex justify-start items-start flex-col gap-2">
+      <SheetDescription className="mt-24 flex justify-start items-start flex-col gap-4">
       {
         NavLinks.map(({id,href,title}) => (
             
-            <Link href={href}  key={id} className="w-full  hover:text-black transition-all dark:hover:text-white">
+            <Link href={href}  key={id} className="w-full   transition-all text-white">
             <SheetClose className="cursor-pointer">
-                <p className="font-semibold text-2xl hover:text-black transition-all dark:hover:text-white">{title}.</p>
+                <p className=" text-2xl transition-all hover:text-white">{title}.</p>
             </SheetClose>
                </Link>
         ))
       }
       <Link href="/contact" className="w-full">
-      <Button className="w-full mt-6 text-sm text-white dark:text-black rounded-full">Contact</Button>
+      <Button className="w-full mt-6 text-sm text-white dark:text-black rounded-sm font-boska lead">Contact</Button>
       </Link>
       </SheetDescription>
     </SheetHeader>
@@ -55,6 +58,9 @@ export default  function Header() {
 </Sheet>
                 </div>
                </div>
+
+      </div>
+               
         
      )
 }
