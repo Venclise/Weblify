@@ -19,7 +19,8 @@ export default function Reviews() {
             key={id}
             className="
               mx-3
-              w-[260px] sm:w-[300px]
+              overflow-hidden
+              w-[260px] sm:w-[300px] h-[150px]
               bg-neutral-100 dark:bg-neutral-900
               border border-neutral-200 dark:border-neutral-800
               p-5 rounded-2xl
@@ -46,9 +47,11 @@ export default function Reviews() {
           <div
             key={`reverse-${id}`}
             className="
+            overflow-hidden
               mx-3
               w-[260px] sm:w-[300px]
               bg-neutral-100 dark:bg-neutral-900
+               h-[150px]
               border border-neutral-200 dark:border-neutral-800
               p-5 rounded-2xl
               flex flex-col justify-between

@@ -25,7 +25,7 @@ export default  function Header() {
         
              <Sheet >
   <SheetTrigger  asChild>
-<Button variant="ghost" className="hover:text-black cursor-pointer">
+<Button variant="ghost" className=" cursor-pointer hover:bg-neutral-800">
      <Menu  className="cursor-pointer text-white  "/>
 </Button>
    

@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Features() {
   return (
-    <div className='h-max w-full mt-24 p-5 lg:p-10 flex flex-col gap-10  '>
+    <div id="features" className='h-max w-full mt-24 p-5 lg:p-10 flex flex-col gap-10  '>
 
 <div className='flex flex-col items-center '>
 <AnimatedText animate='topToBottom'>

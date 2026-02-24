@@ -46,7 +46,7 @@ export default function GallerySlider() {
                   
                 "
               >
-                {/* IMAGE – 70% */}
+               
                 <div className="relative h-[80%] w-full  overflow-hidden">
                   <Image
                     src={img}
@@ -57,7 +57,7 @@ export default function GallerySlider() {
                   />
                 </div>
 
-                {/* CONTENT – 30% */}
+                
                 <div className="h-[10%] p-4 flex flex-col justify-between gap-3">
                   <div>
                     <h2 className="text-3xl text-white tracking-tight">

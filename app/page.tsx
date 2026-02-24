@@ -13,9 +13,8 @@ import Work from "@/sections/Work";
 export default function Home() {
   return (
     <>
-   
       <Hero />
-  <Work />
+      <Work />
   <Features />
   <Reviews />
   <Contact />
