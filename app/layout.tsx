@@ -31,6 +31,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="EYKCfCVVjO8KyLlbY2BFXSL4qsuOWcYC-dd2eqoftHI"
         />
+      
       </head>
       <body className="font-Boska ">
       
