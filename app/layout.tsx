@@ -26,6 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="font-Boska ">
+         <head>
+         <meta
+          name="google-site-verification"
+          content="EYKCfCVVjO8KyLlbY2BFXSL4qsuOWcYC-dd2eqoftHI"
+        />
+      </head>
       <body className="font-Boska ">
       
  <Header /> 
