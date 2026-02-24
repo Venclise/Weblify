@@ -14,7 +14,7 @@ export const metadata: Metadata = {
    title: `Web Development Services | Weblify`,
     description: `Professional web development services. Build fast, modern, and SEO-optimized websites for your business.`,
       icons: {
-    icon: "/favicon.ico"
+    icon: "/favicon-bg.png"
   },
 
 };
