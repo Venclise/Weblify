@@ -16,7 +16,7 @@ export default  function Header() {
      return(
       <div className="bg-transparent  flex items-center justify-center mt-4 w-full h-[2.5rem] fixed top-0 left-0 p-5 z-[99]">
 
-         <div className="flex rounded-lg items-center justify-between py-6 pr-5 pl-2 overflow-hidden w-[90%] h-full bg-brown-800 backdrop-filter backdrop-blur-md   bg-opacity-10 ">
+         <div className="flex rounded-lg items-center justify-between py-6 pr-5 pl-2 overflow-hidden w-[90%] h-full bg-brown-800 backdrop-filter backdrop-blur-xl   bg-opacity-10 ">
                <Link href="/" className="text-2xl bg-black text-white     px-1 rounded-md ">W</Link>
                
                 <div className="flex items-center justify-center gap-2">
