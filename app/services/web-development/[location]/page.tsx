@@ -1,3 +1,4 @@
+import Clients from "@/sections/Clients";
 import Contact from "@/sections/Contact";
 import Features from "@/sections/Features";
 import Hero from "@/sections/Hero";
@@ -54,6 +55,7 @@ export default async function Page({ params }:{params:any}) {
       </ul>
       <div>
 
+<Clients />
           <Work />
           <Features />
           <Reviews />

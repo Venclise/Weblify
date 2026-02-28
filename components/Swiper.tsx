@@ -16,7 +16,7 @@ export default function GallerySlider() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <div className="relative w-full h-max">
+    <div className="relative w-full h-max ">
 
       {/* SWIPER */}
       <Swiper
@@ -31,9 +31,9 @@ export default function GallerySlider() {
           1024: { slidesPerView: 3 },
         }}
       >
-        {GalleryImages.map(({ link, id, title, desc, img, type }) => (
+        {GalleryImages.map(({ url, id, title, desc, img, type }) => (
           <SwiperSlide key={id} className="flex justify-center">
-        <Link href={link} className="w-full" target="_blank">
+        <Link href={url} className="w-full" target="_blank">
               <div
                 className="
                 h-full
@@ -112,3 +112,7 @@ export default function GallerySlider() {
     </div>
   );
 }
+
+
+
+

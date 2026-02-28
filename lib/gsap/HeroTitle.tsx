@@ -122,7 +122,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
         scrollTrigger: {
           trigger: elRef.current,
           start: "top 100%",
-            toggleActions: "play reverse play", 
+            toggleActions: "play ", 
         },
       }
     );

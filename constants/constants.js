@@ -2,72 +2,88 @@ import { m } from "motion/react"
 
  export const GalleryImages = [
   {
-    id: 1,
+    id: "1",
+    img: "/ai.png",
+    url: "https://spherical-seven.vercel.app/",
+    height: 500,
      title: "Spherical AI",
         desc: "An AI Saas Landing page ",
-        img: "/ai.png",
-        link: "https://spherical-seven.vercel.app/",
+        
 
   },
   {
-  id: 2,
+  id: "2",
         title: "Wood",
         desc: "A Furniture  store E-commerce site ",
         img: "/furniture.png",
-        link: "https://wood-inky-eight.vercel.app/",
+        url: "https://wood-inky-eight.vercel.app/",
+      height: 250,
+
   },
        {
-        id: 3,
+        id: "3",
         title: "WTS",
         desc: "A Tech Accessories store E-commerce site ",
         img: "/ets.png",
-        link: "https://wts-eight.vercel.app/",
+        url: "https://wts-eight.vercel.app/",
+      height: 600,
+
        
     },
      {
-        id: 4,
+        id: "4",
         title: "Chewzy",
         desc: "Fast food Resturant site",
         img: "/chewzy.png",
-        link: "https://chewzy-wheat.vercel.app/",
+        url: "https://chewzy-wheat.vercel.app/",
+      height: 400,
+
        
        
     },
 
      {
-        id: 5,
+        id: "5",
         title: "Sonit",
         desc: "A Sanitary Ware E-commerce store",
         img: "/sonit.png",
-        link: "https://sonit-murex.vercel.app/",
+        url: "https://sonit-murex.vercel.app/",
+      height: 600,
+
        
     },
     {
-        id: 6,
+        id: "6",
         title: "Sky Cast",
         desc: "A live weather data app.",
         img: "/skycast.webp",
-        link: "https://skycast-blond.vercel.app/",
+        url: "https://skycast-blond.vercel.app/",
         type: "Front-end",
-        color: "shadow-[6px_9px_36px_3px_rgba(234,_179,_8,_0.5)]"
+        color: "shadow-[6px_9px_36px_3px_rgba(234,_179,_8,_0.5)]",
+      height: 350,
+
     },
   {
-        id: 7,
+        id: "7",
         title: "Brain AI",
         desc: "Brain AI your only AI partner ",
         img: "/brain.png",
-        link: "https://brain-ai-two.vercel.app/",
+        url: "https://brain-ai-two.vercel.app/",
        type: "Landing Page", 
-     color:  "shadow-[6px_9px_36px_3px_rgba(236,_72,_153,_0.5)]" 
+     color:  "shadow-[6px_9px_36px_3px_rgba(236,_72,_153,_0.5)]" ,
+      height: 600,
+
     },
       {
-        id: 8,
+        id: "8",
         title: "Layers",
         desc: "An AI Powered app for your daily solution.",
         img: "/layer.png",
-        link: "https://layer-delta.vercel.app",
+        url: "https://layer-delta.vercel.app",
         type: "Landing Page",
-        color: "shadow-[6px_9px_36px_3px_rgba(34,_197,_94,_0.5)]"
+        color: "shadow-[6px_9px_36px_3px_rgba(34,_197,_94,_0.5)]",
+      height: 600,
+
 
     },
 ]

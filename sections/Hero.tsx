@@ -1,77 +1,64 @@
-import Aurora from "@/components/Aurora";
-import { Button } from "@/components/ui/button";
-import { HeroTitle, HighlightPulse } from "@/lib/gsap/HeroTitle";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react'
+import SplitText from '@/components/SplitText'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { ChevronRight, ChevronRightCircle } from 'lucide-react'
+import AnimatedText from '@/lib/gsap/HeroTitle'
 
-export default function Hero({
-  title,
-  subtitle,
-}: {
-  title?: string;
-  subtitle?: string;
-}) {
+export default function Hero({title,subtitle}:{title:string,subtitle:string}) {
   return (
-    <div className="flex  justify-between  w-full h-screen  relative bg-black overflow-hidden ">
-      <div className="w-full h-full ">
-        <Aurora
-          colorStops={["#050505", "#d2d0d8", "#281f4c"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={1}
-        />
-      </div>
+    <div className=' h-screen lg:h-screen w-full flex flex-col items-center justify-center p-5 lg:p-10  lg:mt-0'>
 
-      <div className="flex  gap-1 flex-col w-full h-full absolute p-5 lg:p-10 justify-center">
-        {title ? (
-          <h1 className="text-[3rem] md:text-[5rem] text-white leading-normal   ">
-            {title}
-          </h1>
-        ) : (
-       <h1 className="text-8xl md:text-[12rem] text-white leading-normal lg:leading-20   ">
-        Weblify
-        </h1>
-        )}
+      
 
+        
+        <SplitText
+        text={`${title ? title : "We Build Websites That Sell Not Just Look Good." }`}
+        className="font-semibold text-4xl lg:text-6xl text-white max-w-xl leading-10 lg:leading-20"
+        delay={35}
+        duration={1}
+        ease="power3.out"
+        splitType="words"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        textAlign="center"
+/>
+      
+<AnimatedText animate='bottomToTop'>
 
+<p 
+  className=" text-xs lg:text-sm text-neutral-200 max-w-xl leading-20"
+  >
 {
-  subtitle ? (
-    <h2 className="font-normal md:text-md lg:text-xl text-xs sm:text-sm  text-neutral-200  ">
-    {subtitle}
-  </h2>   
-  ): (
-    <h2 className="font-normal md:text-md lg:mt-12 z-[50] lg:text-xl text-xs sm:text-sm  text-neutral-400  ">
-          {" "}
-          Traffic isn’t the problem.
-          <span className="text-gray-200">
-            {" "}
-            Performance, clarity, and experience are.{" "}
-          </span>{" "}
-        </h2>
+  subtitle ? subtitle : (
+    "Conversion-optimized, SEO-ready websites for ambitious businesses worldwide. "
   )
 }
 
+</p>
+  </AnimatedText>
 
-        <div className="flex  gap-6 mt-4 ml-4">
-          <Link href="/#work" className="none  ">
-            <Button
-              className="cursor-pointer text-sm  rounded-full hover:bg-gray-300  bg-gray-200 text-black"
-              size="lg"
-            >
-              Our Work
-            </Button>
-          </Link>
-          <Link href="/contact" className="w-1/4">
-            <Button
-              variant="outline"
-              className="cursor-pointer w-full   border text-sm md:text-md rounded-full  text-gray-800 "
-              size="lg"
-            >
-              Contact
-            </Button>
-          </Link>
-        </div>
-      </div>
+<div className='flex items-center gap-4'>
+  <AnimatedText animate='bottomToTop'>
+
+  <Link href="#work">
+    <Button  className='bg-gray-200  rounded-full hover:bg-neutral-900 hover:text-white  text-xl transition-all cursor-pointer  py-6 text-black hover:gap-4'>
+Our work       
+  </Button>
+  </Link>
+  </AnimatedText>
+  <AnimatedText animate='bottomToTop' delay={.2}>
+  <Link href="/contact">
+    <Button variant="secondary" className='bg-neutral-900 rounded-full  hover:bg-neutral-900 hover:text-white  text-xl transition-all cursor-pointer  py-6 text-white hover:gap-4'>Contact us
+      <span className='  mt-1  rounded-full '>
+       <ChevronRight />
+      </span>
+     </Button>
+</Link>
+</AnimatedText>
+</div>
     </div>
-  );
+  )
 }
