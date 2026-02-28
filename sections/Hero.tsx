@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { ChevronRight, ChevronRightCircle } from 'lucide-react'
 import AnimatedText from '@/lib/gsap/HeroTitle'
 
-export default function Hero({title,subtitle}:{title:string,subtitle:string}) {
+export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) {
   return (
     <div className=' h-screen lg:h-screen w-full flex flex-col items-center justify-center p-5 lg:p-10  lg:mt-0'>
 
