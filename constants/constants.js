@@ -174,3 +174,47 @@ export const reviews = [
     post: "Weblify created a sleek and professional website that reflects our brand perfectly. Communication was smooth throughout."
   }
 ];
+
+
+export const faqs = [
+  {
+    id: 1,
+    question: "What services does your web agency provide?",
+    answer:
+      "We provide custom website development, UI/UX design, e-commerce development, web applications, branding, SEO optimization, and ongoing maintenance support.",
+  },
+  {
+    id: 2,
+    question: "How much does a website cost?",
+    answer:
+      "The cost depends on the complexity, features, and design requirements. Simple websites start at a basic rate, while custom web applications and e-commerce platforms require a tailored quote.",
+  },
+  {
+    id: 3,
+    question: "Do you build e-commerce websites?",
+    answer:
+      "Yes. We build secure and scalable e-commerce platforms with payment integration, inventory management, and optimized checkout flows.",
+  },
+  {
+    id: 4,
+    question: "Do you provide SEO services?",
+    answer:
+      "Yes. We implement on-page SEO best practices, technical optimization, and can provide advanced SEO services depending on your business needs.",
+  },
+  {
+    id: 5,
+    question: "Can you redesign my existing website?",
+    answer:
+      "Absolutely. We can redesign your current website to improve design, performance, user experience, and conversion rates.",
+  },
+  {
+    id: 6,
+    question: "Do you offer website maintenance after launch?",
+    answer:
+      "Yes. We provide ongoing maintenance, updates, performance monitoring, and security support after your website goes live.",
+  },
+ 
+
+
+];
+

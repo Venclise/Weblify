@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Clients from "@/sections/Clients";
 import Contact from "@/sections/Contact";
+import FAQ from "@/sections/faq";
 
 import Features from "@/sections/Features";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Work />
   <Features />
   <Reviews />
+  <FAQ />
   <Contact />
       
     </>
