@@ -24,7 +24,10 @@ export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) 
         threshold={0.1}
         rootMargin="-100px"
         textAlign="center"
+        tag='h1'
 />
+
+
       
 <AnimatedText animate='bottomToTop'>
 

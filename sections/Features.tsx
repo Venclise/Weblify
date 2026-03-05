@@ -19,6 +19,7 @@ export default function Features() {
   threshold={0.1}
   rootMargin="-100px"
   textAlign="center"
+  tag='h2'
 />
 
   <SplitText
@@ -33,6 +34,7 @@ export default function Features() {
   threshold={0.1}
   rootMargin="-100px"
   textAlign="center"
+  tag='h2'
 />
 
 
@@ -48,6 +50,7 @@ className='text-sm text-white max-w-sm font-light'
   threshold={0.1}
   rootMargin="-100px"
   textAlign="center"
+  tag='p'
 />
 
        

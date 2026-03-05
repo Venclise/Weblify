@@ -18,6 +18,7 @@ export default function
   to={{ opacity: 1, y: 0 }}
   threshold={0.1}
   rootMargin="-100px"
+  tag='h6'
   
 />
       <SplitText
@@ -32,6 +33,7 @@ export default function
   threshold={0.1}
   rootMargin="-100px"
   textAlign='left'
+  tag='p'
  />
       
         </div>
