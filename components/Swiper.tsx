@@ -26,7 +26,7 @@ export default function GallerySlider() {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="w-full mt-12 h-screen"
         breakpoints={{
-          0: { slidesPerView: 1 },
+          0: { slidesPerView: 1.2 },
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
@@ -37,28 +37,28 @@ export default function GallerySlider() {
               <div
                 className="
                 h-full
-                  rounded-2xl
+                  rounded-4xl
                   overflow-hidden
                   bg-neutral-900
                   border  border-neutral-800
                   transition-all duration-300
-                  hover:scale-[1.02]
+                  hover:scale-[1.01]
                   
                 "
               >
                
-                <div className="relative h-[80%] w-full  overflow-hidden">
+                <div className="relative h-full w-full  overflow-hidden">
                   <Image
                     src={img}
                     alt={title}
                     fill
-                    className="object-cover"
+                    className="object-cover "
                     priority
                   />
                 </div>
 
                 
-                <div className="h-[10%] p-4 flex flex-col justify-between gap-3">
+                <div className="h-[10%] hidden p-4 flex flex-col justify-between gap-3">
                   <div>
                     <h2 className="text-3xl text-white tracking-tight">
                       {title}
@@ -80,25 +80,25 @@ export default function GallerySlider() {
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="
-            h-10 w-10 rounded-full
-            border border-neutral-700
-            bg-neutral-800
+            h-12 w-12 rounded-full
+            border border-neutral-800
+            bg-neutral-900
             flex items-center justify-center
-           hover:bg-neutral-700
+           hover:bg-neutral-800
             transition-all
             text-white   
          
           "
         >
-          <ChevronLeft size={18} />
+          <ChevronLeft size={25} />
         </button>
 
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="
-            h-10 w-10 rounded-full
-            border border-neutral-700
-           bg-neutral-800
+            h-12 w-12 rounded-full
+            border border-neutral-800
+           bg-neutral-900
             flex items-center justify-center
             hover:bg-neutral-700
             transition-all
@@ -106,7 +106,7 @@ export default function GallerySlider() {
          
                     "
         >
-          <ChevronRight size={18} />
+          <ChevronRight size={25} />
         </button>
       </div>
     </div>

@@ -7,14 +7,16 @@ import AnimatedText from '@/lib/gsap/HeroTitle'
 
 export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) {
   return (
-    <div className=' h-screen lg:h-screen w-full flex flex-col items-center justify-center p-5 lg:p-10  lg:mt-0'>
+    <div className=' h-screen lg:h-screen w-full  flex flex-col gap-6 items-center justify-center p-5 lg:p-10  lg:mt-0'>
+
+
 
       
 
         
         <SplitText
         text={`${title ? title : "We Build Websites That Sell Not Just Look Good." }`}
-        className="font-semibold text-4xl lg:text-6xl text-white max-w-xl leading-10 lg:leading-20"
+        className=" text-4xl  lg:text-6xl text-white max-w-2xl leading-10 lg:leading-20"
         delay={35}
         duration={1}
         ease="power3.out"
@@ -32,11 +34,11 @@ export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) 
 <AnimatedText animate='bottomToTop'>
 
 <p 
-  className=" text-xs lg:text-sm text-neutral-200 max-w-xl leading-20"
+  className=" text-lg text-neutral-200 max-w-xl leading-5"
   >
 {
   subtitle ? subtitle : (
-    "Conversion-optimized, SEO-ready websites for ambitious businesses worldwide. "
+    "Modern websites that attract customers and rank well on Google."
   )
 }
 
