@@ -4,9 +4,9 @@ import SplitText from "@/components/SplitText";
 
 export default function Work() {
   return (
-    <div className="w-full h-max lg:p-10 p-5  bg-neutral-950   " id="work">
+    <div className="w-full h-max lg:p-10 p-5  bg-gray-50" id="work">
       <AnimatedText animate="topToBottom" delay={0.1}>
-            <p className="text-red-600 my-4 mx-2">Projects</p>
+            <p className="text-red-600 my-4 mx-2 font-medium">Projects</p>
 
       </AnimatedText>
     
@@ -14,7 +14,7 @@ export default function Work() {
            <SplitText
         text="Unique solutions
 that generate leads"
-        className="text-4xl lg:text-6xl text-white font-semibold max-w-xl leading-10 lg:leading-20"
+        className="text-4xl lg:text-6xl text-black font-semibold max-w-lg "
         delay={35}
         duration={1}
         ease="power3.out"

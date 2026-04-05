@@ -21,17 +21,17 @@ export default function Reviews() {
               overflow-hidden
               w-[260px] sm:w-[300px] h-[170px]
              
-              bg-neutral-900
-              border border-neutral-800
+              bg-neutral-100
+              border border-neutral-200
               p-5 rounded-3xl
               flex flex-col justify-between
             "
           >
-            <p className="text-sm text-neutral-400 leading-relaxed">
-              “{post}”
+            <p className="text-sm text-neutral-800 font-semibold leading-relaxed">
+              {post}
             </p>
 
-            <p className=" text-xs text-right mt-4 text-neutral-100">
+            <p className=" text-xs text-right mt-4 text-neutral-800">
               — {name},<span className="">
 
               {country}
@@ -51,17 +51,17 @@ export default function Reviews() {
               overflow-hidden
               w-[260px] sm:w-[300px] h-[170px]
              
-              bg-neutral-900
-              border border-neutral-800
+              bg-neutral-100
+              border border-neutral-200
               p-5 rounded-3xl
               flex flex-col justify-around
             "
           >
-            <p className="text-sm text-neutral-400 leading-relaxed">
+            <p className="text-sm text-neutral-800 font-semibold leading-relaxed">
               “{post}”
             </p>
 
-            <p className=" text-xs text-right mt-4 text-neutral-100">
+            <p className=" text-xs text-right mt-4 text-neutral-900">
               — {name},
               <span className="">
 

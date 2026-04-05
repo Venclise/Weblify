@@ -6,21 +6,18 @@ import "./globals.css";
 import { Toaster } from "sonner";
 
 
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ChatBtn from "@/components/ChatBtn";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 
 
@@ -48,7 +45,7 @@ export default function RootLayout({
         />
       
       </head>
-      <body  className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body  className={`${inter.variable}  antialiased`}>
       
  <Header /> 
  <ChatBtn />

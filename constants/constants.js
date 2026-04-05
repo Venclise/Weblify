@@ -86,6 +86,27 @@ import { m } from "motion/react"
 
 
     },
+    {
+    id: 9,
+      title: "Mason",
+        desc: "A Landing Page for Builders and Developers",
+        img: "/mason.png",
+        url: "https://mason-five-omega.vercel.app/",
+        type: "Landing Page",
+        color: "shadow-[6px_9px_36px_3px_rgba(34,_197,_94,_0.5)]",
+      height: 600,
+    },
+    
+      {
+    id: 10,
+      title: "CamPak",
+        desc: "A tour booking website for Travel agencies",
+        img: "/campak.png",
+        url: "https://campak.vercel.app/",
+        type: "Full stack",
+        color: "shadow-[6px_9px_36px_3px_rgba(34,_197,_94,_0.5)]",
+      height: 600,
+    },
 ]
 
 export const NavLinks = [

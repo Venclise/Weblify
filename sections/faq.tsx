@@ -21,7 +21,7 @@ FAQ's
      
         <SplitText
         text="Got Questions?"
-        className="text-4xl lg:text-6xl text-white max-w-xl leading-10 lg:leading-20"
+        className="text-5xl md:text-6xl lg:text-7xl text-black max-w-xl leading-10 lg:leading-20"
         delay={35}
         duration={1}
         ease="power3.out"
@@ -37,7 +37,7 @@ FAQ's
      
         <SplitText
         text="We've got answers"
-        className="text-md lg:text-xl text-neutral-300 max-w-xl leading-10 lg:leading-20"
+        className="text-lg md:text-xl lg:text-2xl text-neutral-800 max-w-xl lg:   mx-4 leading-10 lg:leading-20"
         delay={35}
         duration={1}
         ease="power3.out"
@@ -54,11 +54,11 @@ FAQ's
 
 <Accordion type="single" collapsible defaultValue={`items-1`} className="flex flex-col gap-4">
 {faqs.map(({id,question,answer}) => (
-    <AnimatedText animate="bottomToTop" delay={id * .3}>
+    <AnimatedText animate="bottomToTop" delay={id * .3} key={id}>
 
-  <AccordionItem value={`item-${id}  `}  key={id} className="w-full md:w-lg bg-neutral-900 border border-neutral-800 py-2 px-5 rounded-3xl " >
-    <AccordionTrigger className="text-gray-300 text-md">{question}</AccordionTrigger>
-    <AccordionContent className="text-gray-400">
+  <AccordionItem value={`item-${id}  `}  key={id} className="w-full md:w-lg bg-neutral-100 border border-neutral-200 py-2 px-5 rounded-3xl " >
+    <AccordionTrigger className="text-neutral-700 text-md">{question}</AccordionTrigger>
+    <AccordionContent className="text-neutral-800">
         {answer}
     </AccordionContent>
   </AccordionItem>

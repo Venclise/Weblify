@@ -16,33 +16,36 @@ export default function GallerySlider() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <div className="relative w-full h-max ">
+    <div className="relative w-full flex h-screen p-2  ">
 
-      {/* SWIPER */}
+
       <Swiper
         modules={[Navigation, A11y]}
         spaceBetween={24}
         slidesPerView={3}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="w-full mt-12 h-screen"
+        className="w-full mt-12 h-full"
         breakpoints={{
           0: { slidesPerView: 1.2 },
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          640: { slidesPerView: 1.5 },
+          1024: { slidesPerView: 2.2 },
         }}
       >
-        {GalleryImages.map(({ url, id, title, desc, img, type }) => (
+        {GalleryImages.toReversed().map(({ url, id, title, desc, img, type }) => (
           <SwiperSlide key={id} className="flex justify-center">
         <Link href={url} className="w-full" target="_blank">
               <div
                 className="
-                h-full
-                  rounded-4xl
+               h-full
+                  rounded-3xl
                   overflow-hidden
-                  bg-neutral-900
-                  border  border-neutral-800
+               
+                
                   transition-all duration-300
                   hover:scale-[1.01]
+                  group 
+                  relative
+                  
                   
                 "
               >
@@ -51,16 +54,16 @@ export default function GallerySlider() {
                   <Image
                     src={img}
                     alt={title}
-                    fill
-                    className="object-cover "
+                          fill
+                    className="object-cover brightness-90 group-hover:brightness-100"
                     priority
                   />
                 </div>
 
                 
-                <div className="h-[10%] hidden p-4 flex flex-col justify-between gap-3">
+                <div className="h-[20%]  transition-all bg-white w-full absolute bottom-0 left-0 p-4 flex flex-col justify-between gap-3">
                   <div>
-                    <h2 className="text-3xl text-white tracking-tight">
+                    <h2 className="text-3xl text-black tracking-tight">
                       {title}
                     </h2>
                     <p className="text-xs text-neutral-400 line-clamp-2 mt-1 tracking-wide">
@@ -80,33 +83,33 @@ export default function GallerySlider() {
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="
-            h-12 w-12 rounded-full
-            border border-neutral-800
-            bg-neutral-900
+          h-13 w-13 rounded-full
+            border border-neutral-100
+            bg-neutral-200
             flex items-center justify-center
-           hover:bg-neutral-800
+           hover:bg-neutral-100
             transition-all
-            text-white   
+            text-black   
          
           "
         >
-          <ChevronLeft size={25} />
+          <ChevronLeft size={35} />
         </button>
 
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="
-            h-12 w-12 rounded-full
-            border border-neutral-800
-           bg-neutral-900
+            h-13 w-13 rounded-full
+            border border-neutral-100
+            bg-neutral-200
             flex items-center justify-center
-            hover:bg-neutral-700
+           hover:bg-neutral-100
             transition-all
-            text-white  
+            text-black   
          
                     "
         >
-          <ChevronRight size={25} />
+          <ChevronRight size={35} />
         </button>
       </div>
     </div>

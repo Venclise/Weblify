@@ -7,7 +7,7 @@ import AnimatedText from '@/lib/gsap/HeroTitle'
 
 export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) {
   return (
-    <div className=' h-screen lg:h-screen w-full  flex flex-col gap-6 items-center justify-center p-5 lg:p-10  lg:mt-0'>
+    <div className=' h-screen lg:h-screen w-full  flex flex-col gap-6 justify-center p-5 lg:p-10  lg:mt-0'>
 
 
 
@@ -16,7 +16,7 @@ export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) 
         
         <SplitText
         text={`${title ? title : "We Build Websites That Sell Not Just Look Good." }`}
-        className=" text-4xl  lg:text-6xl text-white max-w-2xl leading-10 lg:leading-20"
+        className=" text-6xl  lg:text-8xl text-black font-semibold   max-w-4xl"
         delay={35}
         duration={1}
         ease="power3.out"
@@ -25,7 +25,7 @@ export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) 
         to={{ opacity: 1, y: 0 }}
         threshold={0.1}
         rootMargin="-100px"
-        textAlign="center"
+        textAlign="left"
         tag='h1'
 />
 
@@ -34,12 +34,10 @@ export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) 
 <AnimatedText animate='bottomToTop'>
 
 <p 
-  className=" text-lg text-neutral-200 max-w-xl leading-5"
+  className=" text-lg text-neutral-900 max-w-xl leading-5"
   >
 {
-  subtitle ? subtitle : (
-    "Modern websites that attract customers and rank well on Google."
-  )
+  subtitle && subtitle 
 }
 
 </p>
@@ -49,7 +47,7 @@ export default function Hero({title,subtitle}:{title?:string,subtitle?:string}) 
   <AnimatedText animate='bottomToTop'>
 
   <Link href="#work">
-    <Button  className='bg-gray-200  rounded-full hover:bg-neutral-900 hover:text-white  text-xl transition-all cursor-pointer  py-6 text-black hover:gap-4'>
+    <Button  className='bg-neutral-700  rounded-full hover:bg-neutral-600  text-xl transition-all cursor-pointer  py-6 text-white hover:gap-4'>
 Our work       
   </Button>
   </Link>

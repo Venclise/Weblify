@@ -21,20 +21,19 @@ export default  function Header() {
                
                 <div className="flex items-center justify-center gap-2">
 
-
         
              <Sheet >
   <SheetTrigger  asChild>
-<Button variant="ghost" className=" cursor-pointer hover:bg-neutral-800">
-     <Menu  className="cursor-pointer text-white  "/>
+<Button variant="ghost" className=" cursor-pointer hover:bg-neutral-200">
+     <Menu  className="cursor-pointer text-black  "/>
 </Button>
    
   </SheetTrigger>
-<SheetContent className="z-100 p-5 bg-black border-0">
+<SheetContent className="z-100 p-5 bg-white border-0">
     <SheetHeader>
 <SheetClose>
         <SheetTitle>
-               <Link href="/" className="text-2xl text-white   px-1 rounded-md ">W</Link>
+               <Link href="/" className="text-2xl text-black   px-1 rounded-md ">W</Link>
 
         </SheetTitle>
 </SheetClose>
@@ -42,15 +41,15 @@ export default  function Header() {
       {
         NavLinks.map(({id,href,title}) => (
             
-            <Link href={href}  key={id} className="w-full   transition-all text-white">
+            <Link href={href}  key={id} className="w-full   transition-all text-black">
             <SheetClose className="cursor-pointer">
-                <p className=" text-2xl transition-all hover:text-white">{title}.</p>
+                <p className=" text-2xl transition-all hover:underline">{title}.</p>
             </SheetClose>
                </Link>
         ))
       }
       <Link href="/contact" className="w-full">
-      <Button className="w-full mt-6 text-sm text-white dark:text-black rounded-sm font-boska lead">Contact</Button>
+      <Button className="w-full mt-6 text-sm text-white dark:text-black rounded-full py-6 font-boska lead">Contact</Button>
       </Link>
       </SheetDescription>
     </SheetHeader>
